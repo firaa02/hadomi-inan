@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "402209232993",
+    "project_id": "hadomi-inan-93b51",
+    "storage_bucket": "hadomi-inan-93b51.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402209232993:android:44f73dcbb2cd730db07220",
+        "android_client_info": {
+          "package_name": "com.example.hadomi_inan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiUSP7AUGb_k_OU8qNzEQ31dn-9LhQsWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

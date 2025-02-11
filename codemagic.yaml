@@ -1,0 +1,24 @@
+workflows:
+  ios-build:
+    name: iOS Build
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+    environment:
+      vars:
+        FLUTTER_VERSION: stable
+      flutter: stable
+      xcode: latest
+    scripts:
+      - name: Install dependencies
+        script: |
+          flutter pub get
+          cd ios
+          flutter build ios --no-codesign
+          pod install
+    artifacts:
+      - build/ios/iphoneos/*.app
+      - build/ios/ipa/*.ipa
+    publishing:
+      email:
+        recipients:
+          - "email_kamu@gmail.com"
